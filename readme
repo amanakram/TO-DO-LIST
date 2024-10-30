@@ -1,0 +1,39 @@
+#TO-DO-LISt PROJECT
+
+##function to run the code
+1.first unzip the folder.
+2.open this folder in vs code.
+3.after opening, run the project using "go live server".
+4.This opens a webpage will show you to do list project.
+
+##Project Overview
+This To-Do List application is a simple web-based task manager built with HTML, CSS, and JavaScript. 
+The application enables users to add, mark as complete, and delete tasks, with changes stored in the browser's localStorage for persistence.
+The user interface is designed with a clean, minimalistic layout, and each task entry has a checkbox to mark as complete, a delete button, and some formatting customization
+
+##Key Features =>
+Add Task: Users can add tasks via an input box, with the first letter capitalized and any digits bolded.
+Mark Task Complete: Click on a task to toggle its "completed" state.
+Delete Task: Each task includes a delete button, allowing users to remove it from the list.
+Persistent Storage: Tasks are stored in localStorage so they remain even after refreshing the page.
+Responsive Design: The layout is flexible and adapts to various screen sizes
+
+
+##Project Structure =>
+HTML: Defines four main <div> elements:
+   1.Container: Main div holding all other sections.
+   2.Heading: Displays the project title and an image.
+   3.Tasks: Contains an input box and an "Add" button for new tasks.
+   4.List: Holds an unordered list that dynamically shows tasks when added.
+CSS: Manages styling for layout, color gradients, and button effects.
+JavaScript: Provides interactive functionality and local storage support.
+
+##Java Script Functions=>
+addTask(): Validates the input, creates a list item (<li>) with the task. The span with a close button is appended to each list item for removal functionality. Shows the List Div upon adding a task.
+Event Listener on listcontainer: Enables task completion toggling by checking/unchecking and allows task removal by clicking the close button (<span>).
+saveData(): Saves the current list of tasks in localStorage.
+showTask(): Loads tasks from localStorage upon page load and displays them in the List Div.
+
+Note:
+The application will only display the task list div when there are tasks. If no tasks are added, the list will be hidden.
+
